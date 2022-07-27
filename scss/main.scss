@@ -282,8 +282,8 @@ nav.menuBox {
           position: absolute;
           bottom: 5%;
           right: 0;
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           transform: rotate(90deg);
           cursor: pointer;
           display: block;
@@ -298,8 +298,8 @@ nav.menuBox {
           position: absolute;
           bottom: 5%;
           left: 0;
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           transform:  rotate(-90deg);
           cursor: pointer;
           display: block;
@@ -315,10 +315,78 @@ nav.menuBox {
     }
   }
 
+  .studyBox {
+
+    .study {
+      position: relative;
+      width: 765px;
+      padding: 20px;
+
+      h3 {
+        font-size: 25px;
+      }
+      
+      .cardBox {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        padding-top: 20px;
+        overflow: hidden;
+
+        .cardView {
+          position: absolute;
+          bottom: 0;
+          left: 30px;
+          height: 95%;
+          display: flex;
+          transition: .3s linear;
+
+          .card {
+            width: 200px;
+            height:100%;
+            margin-right: 10px;
+            transition: .3s linear;
+          }
+        }
+      }
+
+      .arrowRight {
+        position: absolute;
+        bottom: 5%;
+        right: 10px;
+        width: 60px;
+        height: 60px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        display: block;
+
+        &.active {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      .arrowLeft {
+        position: absolute;
+        bottom: 5%;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+        transform:  rotate(-90deg);
+        cursor: pointer;
+        display: block;
+
+        &.active {
+          display: none;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
 }
 
-footer {
-  margin-bottom: 0;
+footer.content {
 
   .footerInner {
     width: 765px;
@@ -376,6 +444,10 @@ footer {
       width: 500px;
     }
 
+    .studyBox .study {
+      width: 500px;
+    }
+
   } 
   footer {
   
@@ -407,6 +479,10 @@ footer {
     }
 
     .toyProjectBox .toyProject {
+      width: 90%;
+    }
+
+    .studyBox .study {
       width: 90%;
     }
   } 
