@@ -71,6 +71,18 @@ header {
     cursor: pointer;
   }
 
+  .contactBtn {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
 
 }
 
@@ -147,6 +159,7 @@ nav.menuBox {
 
         h3 {
           font-size: 25px;
+          margin-bottom: 10px;
         }
         p {
           padding-top: 10px;
@@ -304,6 +317,46 @@ nav.menuBox {
 
 }
 
+footer {
+  margin-bottom: 0;
+
+  .footerInner {
+    width: 765px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .contactBox {
+      width: 230px;
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        width: 100%;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .copy {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 799px) {
   .contentBox {
     .introduce {
@@ -324,6 +377,18 @@ nav.menuBox {
     }
 
   } 
+  footer {
+  
+    .footerInner {
+      width: 500px;
+      justify-content: center;
+
+      .copy {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 520px) {
@@ -345,4 +410,10 @@ nav.menuBox {
       width: 90%;
     }
   } 
+  footer {
+  
+    .footerInner {
+      width: 90%;
+    }
+  }
 }
